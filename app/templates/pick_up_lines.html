@@ -1,0 +1,36 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/pickup.css')}}">
+<link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+{% endblock %}
+{% block content %}
+
+<section class=" pick">
+        <div class="container ">
+                <h3 style="font-size: 30px; font-weight: 900; color: black; font-family: 'Ranchers', sans-serif" class="text-center ">PICK UP LINES</h3>
+                <a style="font-size:20px;" class="btn-success"  href="{{url_for('main.new_pitch')}}">
+                    <br>
+                    CREATE NEW PITCH
+                </a>
+            
+                    {{macro.displayPitchesInCategories(pitches,2)}}
+                <hr>
+            </div>
+</section>
+
+<style>
+    body{
+        background-image: url(../static/susan-yin-ImoVrhUBeFs-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+</style>
+
+
+{% endblock %}
