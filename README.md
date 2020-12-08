@@ -2,7 +2,8 @@
 ## Author
 Kennedy Karuri
 ## Description
-This is an application whereby that offers on time news for reference during ones available time.
+A minute can make or break you. Let us make sure that you use your 1 minute to actually say something meaningful.
+pitch is an application that allows a user to make the best out of a minute by making meaningful pitches and having them voted on and commented on.
 ## Live Demo
 ## User Story
 As a user, I would like to see the pitches other people have posted.
